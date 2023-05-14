@@ -1,0 +1,61 @@
+/* 
+    Building Blocks
+    
+    selector {
+        [ DECLARATION BLOCK]
+        property: value;    
+    }    
+*/
+
+nav {
+    background-color: #d2d2d2;
+    /* 
+        -preset color: red, blue, yellow
+        - rgb & rgba (red, green, blue, alpha)
+            -alpha determines transparency
+            -ex: rgba(200, 15, 100, 0.5)
+            -each color scales from 0 - 255
+        - Hexidecimal 
+            -6 digit: 0-9, A-F
+            - #d2f
+    */
+    overflow: hidden; 
+
+}
+
+.btn {  /* Periods indicate class */
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+nav .btn {
+    /*  Points to a nav and ANY class within it, or children of, name "btn" */
+    text-shadow: 1px 2px 1px pink;
+}
+
+div .paragraph > p {
+    color: red;
+}
+#home { /* Hash (#) indicate ID */
+    float: left;
+
+}
+
+.paragraph + div {
+    color: purple;
+}
+
+a:hover {
+    color: lightblue;
+
+}
+
+a:active {
+    color: purple;
+    text-shadow: 2px 2px 2px rgb(255,255,255);
+}
